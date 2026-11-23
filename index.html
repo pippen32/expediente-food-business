@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Expediente Food Business — Licencia de comida por condado · Consultoría Omar Cruz</title>
+<meta name="description" content="Armamos tu expediente de licencia de food establishment por condado: formularios transcritos de lo que dictas, documentos en orden, citas y ruta de entrega. $149 base · $249 food truck (dos jurisdicciones). Hyattsville, MD."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* FAMILIA VISUAL: «PASE DE COCINA» — patrón de lectura de comanda en riel:
+   la página se lee como tickets colgados en el pase, en orden de servicio
+   (Ticket 01 → 06), cada sección es una comanda con perforación, hora y estación.
+   Tipografía: Space Grotesk (titulares) + Work Sans (texto) + JetBrains Mono (tickets).
+   Color: carbón cocina, rojo tomate profundo, verde albahaca, mostaza, hueso.
+   Distinta a «Manifiesto de Ruta», «Registro de Llaves», «Archivador Doméstico» y «Bitácora de Estancia». */
+:root{--char:#1c1917;--char2:#292524;--tom:#9f1d0e;--tom2:#c22e18;--basil:#1f5c3a;--basilbg:#e6f2e9;--must:#d9a404;--mustbg:#fdf3cf;--bone:#faf6ef;--paper:#fffdf8;--ink:#292524;--muted:#6b6259;--line:#e7ddd0;--red:#9e2b1f;--redbg:#fbeae6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bone);color:var(--ink);font-family:"Work Sans",system-ui,sans-serif;font-size:16.5px;line-height:1.65}
+h1,h2,h3{font-family:"Space Grotesk",system-ui,sans-serif;line-height:1.08;letter-spacing:-.01em}
+.mono{font-family:"JetBrains Mono",monospace}
+.top{background:var(--char);color:#fff}.top-in{max-width:1080px;margin:auto;padding:10px 20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.92rem}.top a{color:#ffd166;font-weight:800;text-decoration:none}
+.wrap{max-width:1080px;margin:auto;padding:26px 20px 10px}
+.rail{height:14px;background:repeating-linear-gradient(90deg,var(--char) 0 46px,#57534e 46px 50px);border-radius:99px;margin:6px 0 0;position:relative}
+.hero{background:var(--char);color:#fff;border-radius:0 0 22px 22px;padding:36px 34px 40px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:auto -60px -90px auto;width:300px;height:300px;border:34px solid rgba(217,164,4,.25);border-radius:50%}
+.shieldrow{display:flex;gap:14px;align-items:center;position:relative;z-index:1}.brand{font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-family:"Space Grotesk",sans-serif}.sub{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:#d6d3d1}
+.kicker{color:#ffd166;font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:.78rem;margin-top:26px}
+h1{font-size:clamp(2.1rem,5.2vw,3.6rem);margin:.25em 0;max-width:19ch}h1 .hl{color:#ffd166}
+.lede{font-size:1.13rem;color:#e7e5e4;max-width:64ch;position:relative;z-index:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:13px 24px;border-radius:10px;font-weight:800;text-decoration:none;border:2px solid var(--char)}
+.btn-p{background:var(--tom2);color:#fff;border-color:var(--tom2)}.btn-g{background:#fff;color:var(--char)}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px;position:relative;z-index:1}
+.note{margin-top:16px;color:#d6d3d1;font-size:.94rem;max-width:62ch;position:relative;z-index:1}.note strong{color:#fff}
+section{padding:36px 0 4px}
+.ticket{background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 8px 24px rgba(28,25,23,.07);overflow:hidden}
+.ticket-head{display:flex;gap:12px;align-items:center;padding:16px 22px;border-bottom:2px dashed var(--line);background:#fff8e8;flex-wrap:wrap}
+.tno{font-family:"JetBrains Mono",monospace;font-weight:700;background:var(--char);color:#ffd166;border-radius:6px;padding:4px 10px;font-size:.82rem}
+.station{margin-left:auto;font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+h2{font-size:clamp(1.5rem,3.4vw,2rem);margin:0}
+.sec-sub{color:var(--muted);max-width:68ch;margin:10px 2px 18px}
+.body{padding:20px 22px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.doc{display:flex;gap:12px;padding:14px 0;border-bottom:1px dashed var(--line)}.doc:last-child{border:none}
+.check{flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:var(--basilbg);border:1.5px solid var(--basil);display:flex;align-items:center;justify-content:center;color:var(--basil);font-weight:900}
+.doc h3{margin:0 0 3px;font-size:1.03rem}.doc p{margin:0;color:var(--muted);font-size:.96rem}
+.example{border:2px solid var(--char);border-radius:12px;overflow:hidden}
+.example-head{background:var(--mustbg);padding:12px 18px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;border-bottom:2px dashed #d6c690}
+.badge{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:.72rem;letter-spacing:.1em;background:var(--char);color:#fff;padding:4px 9px;border-radius:5px}
+.ex-row{display:grid;grid-template-columns:170px 1fr auto;gap:12px;padding:13px 18px;border-bottom:1px solid var(--line);align-items:center}.ex-row:last-child{border:none}
+.ex-row:nth-child(even){background:#fff8e8}.ex-k{font-family:"JetBrains Mono",monospace;font-size:.78rem;font-weight:700;text-transform:uppercase;color:var(--tom)}
+.ok{font-family:"JetBrains Mono",monospace;font-size:.75rem;font-weight:700;color:var(--basil);background:var(--basilbg);padding:3px 8px;border-radius:99px}
+.price{border:1px solid var(--line);border-radius:14px;padding:24px 22px;background:var(--paper);display:flex;flex-direction:column;box-shadow:0 8px 24px rgba(28,25,23,.06)}
+.price.featured{border:3px solid var(--char)}
+.flag{font-family:"JetBrains Mono",monospace;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tom)}
+.amt{font-family:"JetBrains Mono",monospace;font-size:2.5rem;font-weight:700;margin:10px 0 2px}.amt small{font-size:.9rem;color:var(--muted)}
+.price ul{list-style:none;padding:0;margin:14px 0 20px;flex:1}.price li{padding:7px 0 7px 22px;position:relative;border-bottom:1px dashed var(--line);font-size:.95rem;color:#44403c}.price li:before{content:"—";position:absolute;left:0;color:var(--tom);font-weight:800}
+.price .btn{width:100%}
+.warn{background:var(--mustbg);border:1.5px solid #d9b93a;border-radius:12px;padding:18px 20px;margin-top:16px}
+.upsell{background:var(--basil);color:#fff;border-radius:16px;padding:28px 26px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.upsell h2{color:#fff}.upsell p{color:#d9ecdd;margin:8px 0 0;max-width:58ch}.upsell .amt{color:#ffd166}
+.step{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:18px 22px;border-bottom:1px solid var(--line)}.step:last-child{border:none}
+.snum{width:48px;height:48px;border-radius:50%;background:var(--char);color:#ffd166;display:flex;align-items:center;justify-content:center;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:1.15rem}
+.step h3{margin:2px 0 4px}.step p{margin:0;color:var(--muted)}
+details{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+summary{cursor:pointer;padding:17px 20px;font-weight:800;list-style:none}summary::-webkit-details-marker{display:none}
+details .a{padding:0 20px 18px;color:#44403c}
+.honest{border:2.5px solid var(--red);background:var(--redbg);border-radius:14px;padding:24px}.honest p{max-width:72ch}
+.formhead{background:var(--char);color:#fff;padding:20px 24px}.formhead h2{color:#fff}.formhead p{color:#d6d3d1;margin:4px 0 0}
+form{padding:24px}.field{margin-bottom:16px}.field label{display:block;font-weight:700;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;min-height:50px;padding:12px 14px;font:inherit;border:1.5px solid #cbbfab;border-radius:8px;background:#fff;color:var(--ink)}
+.field textarea{min-height:110px}.submit{width:100%;min-height:56px;border:none;border-radius:10px;background:var(--tom2);color:#fff;font:inherit;font-weight:900;font-size:1.05rem;cursor:pointer}
+.legal{font-size:.86rem;color:var(--muted);text-align:center}
+footer{margin-top:44px;border-top:3px solid var(--char);background:var(--paper)}.foot{max-width:1080px;margin:auto;padding:26px 20px 34px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot p{color:var(--muted);font-size:.92rem;max-width:56ch}
+@media(max-width:760px){.grid2,.grid3{grid-template-columns:1fr}.ex-row{grid-template-columns:1fr}.upsell{grid-template-columns:1fr}.hero{padding:28px 20px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="top-in"><span>HYATTSVILLE, MARYLAND · ATENCIÓN EN ESPAÑOL</span><a href="tel:+12406590154">☎ 240-659-0154</a></div></div>
+<div class="wrap">
+<div class="rail" aria-hidden="true"></div>
+<header class="hero">
+  <div class="shieldrow">
+    <svg width="46" height="50" viewBox="0 0 44 48" aria-hidden="true"><path d="M22 1 41 7v13c0 12.5-8 21.5-19 26C11 41.5 3 32.5 3 20V7Z" fill="#fff"/><path d="M22 4.5 38 9.7V20c0 10.8-6.7 18.8-16 23C12.7 38.8 6 30.8 6 20V9.7Z" fill="none" stroke="#9f1d0e" stroke-width="1.6"/><text x="22" y="24" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-weight="700" font-size="13" fill="#1c1917">OC</text><text x="22" y="35" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="6" fill="#9f1d0e">MD · USA</text></svg>
+    <div><div class="brand">Consultoría Omar Cruz</div><div class="sub">Preparación de documentos · Hyattsville, MD</div></div>
+  </div>
+  <p class="kicker">Expediente · Licencia de food establishment por condado</p>
+  <h1>Tu licencia de comida, <span class="hl">con el expediente armado</span> condado por condado.</h1>
+  <p class="lede">Cada condado pide su propio paquete. Nosotros lo dejamos <strong>en orden y listo pa' entregar</strong>: formularios transcritos de lo que tú dictas, documentos organizados, citas coordinadas y la ruta de entrega clara — sin papeles sueltos ni vueltas perdidas.</p>
+  <div class="ctas"><a class="btn btn-p" href="#solicitud">Abrir mi expediente</a><a class="btn btn-g" href="#precios">Ver precios — $149 / $249</a></div>
+  <p class="note"><strong>Food truck:</strong> tu expediente es de <strong>dos jurisdicciones</strong> — la base donde guardas y preparas, y cada punto de venta. Ese paquete completo cuesta $249.</p>
+</header>
+
+<section><div class="ticket"><div class="ticket-head"><span class="tno">TICKET 01</span><h2>Qué armamos por ti</h2><span class="station">Estación · Documentos</span></div><div class="body">
+<div class="doc"><span class="check">✓</span><div><h3>Formularios del condado, transcritos</h3><p>Transcribimos en los formularios la información que tú nos dictas, campo por campo. Tú revisas y apruebas cada dato antes de que quede en el papel.</p></div></div>
+<div class="doc"><span class="check">✓</span><div><h3>Documentos en orden, por sección</h3><p>Identificación, registro del negocio, certificaciones, planos o fotos del local/cocina cuando el condado los pide, y comprobantes — cada cosa en su sección, con índice.</p></div></div>
+<div class="doc"><span class="check">✓</span><div><h3>Citas y ruta de entrega</h3><p>Te dejamos la ruta escrita: qué se entrega, dónde, en qué orden y qué cita sigue (inspección, ventanilla, pago). Sin adivinar el próximo paso.</p></div></div>
+<div class="doc"><span class="check">✓</span><div><h3>Food truck: dos jurisdicciones</h3><p>Expediente de la jurisdicción base + expediente de los puntos de venta. Dos paquetes separados, cada uno con su checklist, para que no te devuelvan por mezclar condados.</p></div></div>
+</div></div></section>
+
+<section><div class="ticket"><div class="ticket-head"><span class="tno">TICKET 02</span><h2>Prueba visible: así queda un expediente</h2><span class="station">Estación · Pase</span></div><div class="body">
+<p class="sec-sub" style="margin-top:0">Esto es un modelo organizado con datos ficticios, pa' que veas el formato real de entrega antes de pagar un centavo:</p>
+<div class="example"><div class="example-head"><strong>EXPEDIENTE — FOOD ESTABLISHMENT · CONDADO DE EJEMPLO</strong><span class="badge">EJEMPLO ILUSTRATIVO</span></div>
+<div class="ex-row"><span class="ex-k">Sección A</span><span>Formulario de solicitud del condado — transcrito y revisado con el cliente</span><span class="ok">EN ORDEN</span></div>
+<div class="ex-row"><span class="ex-k">Sección B</span><span>Registro del negocio + identificación del solicitante</span><span class="ok">EN ORDEN</span></div>
+<div class="ex-row"><span class="ex-k">Sección C</span><span>Certificación de manipulación de alimentos (copia)</span><span class="ok">EN ORDEN</span></div>
+<div class="ex-row"><span class="ex-k">Sección D</span><span>Menú propuesto + lista de equipos</span><span class="ok">EN ORDEN</span></div>
+<div class="ex-row"><span class="ex-k">Entrega</span><span>Ruta: ventanilla del condado → pago de tarifas del cliente → cita de inspección</span><span class="ok">RUTA LISTA</span></div>
+</div>
+<p style="color:var(--muted);font-size:.9rem">Datos ficticios. Los requisitos exactos varían por condado; tu expediente se arma con la lista real de TU condado.</p>
+</div></div></section>
+
+<section id="precios"><div class="ticket"><div class="ticket-head"><span class="tno">TICKET 03</span><h2>Precios exactos</h2><span class="station">Estación · Caja</span></div><div class="body">
+<div class="grid2">
+<article class="price featured"><p class="flag">Local fijo · Una jurisdicción</p><h3>Expediente Base</h3><p class="amt">$149<small> pago único</small></p><ul><li>Formularios del condado transcritos de tu dictado</li><li>Documentos organizados por sección con índice</li><li>Citas y ruta de entrega por escrito</li><li>Revisión final contigo antes de entregar</li></ul><a class="btn btn-p" href="#solicitud">Quiero el base — $149</a></article>
+<article class="price"><p class="flag">Food truck · Dos jurisdicciones</p><h3>Expediente Food Truck</h3><p class="amt">$249<small> pago único</small></p><ul><li>Todo lo del Expediente Base</li><li>Segundo expediente: puntos de venta</li><li>Dos checklists separados, uno por jurisdicción</li><li>Ruta de entrega de ambas jurisdicciones</li></ul><a class="btn btn-g" href="#solicitud">Quiero el food truck — $249</a></article>
+</div>
+<div class="warn"><strong>Costos aparte:</strong> las tarifas del estado y del condado (licencia, inspección y demás cargos oficiales) las pagas <strong>tú directamente</strong> a la jurisdicción. Nuestro precio es solo por armar tu expediente.</div>
+</div></div></section>
+
+<section><div class="upsell"><div><p class="flag" style="color:#ffd166">Paso siguiente · Contratación separada</p><h2>Cuidado Anual de Negocio en Regla — $79/año</h2><p>La licencia vence y las renovaciones no avisan. Con el Cuidado Anual te avisamos de renovaciones y vencimientos y te ayudamos a mantener tu negocio en regla todo el año. <strong>No está incluido</strong> en los $149/$249: se contrata por separado, cuando tú decidas.</p></div><p class="amt">$79<small style="color:#d9ecdd"> /año</small></p></div></section>
+
+<section><div class="ticket"><div class="ticket-head"><span class="tno">TICKET 04</span><h2>El proceso, en orden de servicio</h2><span class="station">Estación · Ruta</span></div><div>
+<div class="step"><span class="snum">1</span><div><h3>Llenas el formulario</h3><p>Nos dices tu condado, si es local fijo o food truck, y qué documentos ya tienes.</p></div></div>
+<div class="step"><span class="snum">2</span><div><h3>Dictas, transcribimos</h3><p>Tú dictas tu información; nosotros la transcribimos en los formularios de tu condado y organizamos tus documentos por sección.</p></div></div>
+<div class="step"><span class="snum">3</span><div><h3>Revisión contigo</h3><p>Revisamos el expediente completo contigo, línea por línea. Lo que falte queda anotado con el paso exacto pa' conseguirlo.</p></div></div>
+<div class="step"><span class="snum">4</span><div><h3>Tú entregas y sometes</h3><p>Con la ruta de entrega en mano, <strong>tú firmas, tú sometes y tú pagas</strong> las tarifas directamente a tu condado.</p></div></div>
+</div></div></section>
+
+<section><div class="ticket"><div class="ticket-head"><span class="tno">TICKET 05</span><h2>Preguntas frecuentes</h2><span class="station">Estación · Dudas</span></div><div class="body">
+<details><summary>¿Me garantizan que me aprueban la licencia?</summary><div class="a"><p><strong>No.</strong> La aprobación la decide únicamente tu condado. Garantizamos un expediente completo, organizado y revisado contigo — nunca un resultado del gobierno.</p></div></details>
+<details><summary>¿Ustedes firman o someten por mí?</summary><div class="a"><p>No. No firmamos ni sometemos por el cliente. Tú firmas y entregas tu expediente; nosotros lo dejamos listo y te damos la ruta.</p></div></details>
+<details><summary>¿Por qué el food truck cuesta $249?</summary><div class="a"><p>Porque son dos jurisdicciones: la base y los puntos de venta. Cada una pide su propio paquete; el precio cubre armar los dos expedientes por separado.</p></div></details>
+<details><summary>¿Esto es asesoría legal?</summary><div class="a"><p>No. Es un servicio secretarial de transcripción y organización de documentos. Omar Cruz no es abogado y este servicio no es asesoría legal.</p></div></details>
+</div></div></section>
+
+<section><div class="honest"><h2>La línea legal, sin letra pequeña</h2>
+<p><strong>Omar transcribe y organiza lo que el cliente dicta.</strong> La Consultoría Omar Cruz <strong>NO garantiza la aprobación de la licencia</strong>, <strong>NO firma ni somete por el cliente</strong> y esto <strong>no es asesoría legal</strong>; Omar Cruz no es abogado. Los <strong>costos del estado y del condado los paga el cliente aparte</strong>, directamente a su jurisdicción. Servicio privado, sin afiliación con ningún condado ni agencia de gobierno.</p></div></section>
+
+<section id="solicitud"><div class="ticket"><div class="ticket-head"><span class="tno">TICKET 06</span><h2>Abre tu expediente</h2><span class="station">Estación · Entrada</span></div>
+<div class="formhead"><h2>Formulario de solicitud</h2><p>Tu información llega directo a nuestro correo y te contactamos pa' revisar tu condado.</p></div>
+<form action="https://formsubmit.co/leydelswing@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Nueva solicitud — Expediente Food Business"/>
+<input type="hidden" name="_cc" value="swingbravo@gmail.com"/>
+<input type="hidden" name="_template" value="table"/>
+<input type="hidden" name="_captcha" value="false"/>
+<div class="grid2"><div class="field"><label for="f-nombre">Nombre completo *</label><input id="f-nombre" name="Nombre completo" required placeholder="Tal como aparece en tu identificación"/></div>
+<div class="field"><label for="f-tel">Teléfono *</label><input id="f-tel" name="Teléfono" type="tel" required placeholder="(240) 000-0000"/></div></div>
+<div class="field"><label for="f-email">Correo electrónico *</label><input id="f-email" name="Correo electrónico" type="email" required placeholder="tunombre@correo.com"/></div>
+<div class="grid2"><div class="field"><label for="f-condado">Condado del negocio *</label><input id="f-condado" name="Condado" required placeholder="Ej.: Prince George's, Montgomery…"/></div>
+<div class="field"><label for="f-tipo">Tipo de negocio *</label><select id="f-tipo" name="Tipo de negocio" required><option value="" disabled selected>Selecciona una opción</option><option>Local fijo — $149</option><option>Food truck (dos jurisdicciones) — $249</option><option>Otro negocio de comida</option><option>No estoy seguro</option></select></div></div>
+<div class="field"><label for="f-msg">Mensaje</label><textarea id="f-msg" name="Mensaje" placeholder="Cuéntanos: qué vendes, dónde, qué documentos ya tienes…"></textarea></div>
+<button class="submit" type="submit">Enviar mi solicitud →</button>
+<p class="legal">Al enviar, tu información llega a la Consultoría Omar Cruz pa' contactarte sobre este servicio.</p>
+</form></div>
+<p style="text-align:center">¿Prefieres hablar primero? <a href="tel:+12406590154"><strong>240-659-0154</strong></a> · Hyattsville, Maryland.</p></section>
+</div>
+<footer><div class="foot"><div><strong>Consultoría Omar Cruz</strong><p>Transcripción y organización de documentos · Hyattsville, MD. Servicio privado sin afiliación con condados ni agencias de gobierno. No garantiza aprobación de licencias; no es asesoría legal.</p></div><div><a href="tel:+12406590154">240-659-0154</a><br/><a href="#precios">Precios</a><br/><a href="#solicitud">Abrir mi expediente</a></div></div></footer>
+<script>document.querySelectorAll('details').forEach(function(d){d.addEventListener('toggle',function(){})});</script>
+</body>
+</html>
